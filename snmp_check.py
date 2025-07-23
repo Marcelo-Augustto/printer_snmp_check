@@ -63,7 +63,6 @@ async def get_snmp_value(snmpEngine, printer_ip, community_string, oid):
         else:
             return None, f"Error: {errorStatus.prettyPrint()} at {errorIndex and varBinds[int(errorIndex) - 1] or '?'}"
     else:
-        # Check if varBinds is not empty before accessing index 0
         if varBinds:
             return str(varBinds[0][1]), None
         else:
@@ -76,7 +75,6 @@ async def get_printer_info(snmpEngine, printer_ip, community_string, oids, secto
     """
     printer_data = {'IP Address': printer_ip}
 
-    # Add Sector information
     printer_data['Sector'] = sector_map.get(printer_ip, 'N/A - Sector nao encontrado')
 
     for name, oid in oids.items():
@@ -106,7 +104,7 @@ async def get_printer_info(snmpEngine, printer_ip, community_string, oids, secto
             continue
         else:
             printer_data['Serial Number'] = error_msg
-            serial_number_found = True # Even if it's an error, we processed it
+            serial_number_found = True
             break
 
     if not serial_number_found:
@@ -120,20 +118,15 @@ async def main():
     """
     snmpEngine = SnmpEngine()
     output_filename = 'printers_info.csv'
-    sector_mapping_file = 'ip_sector.csv' # Name of your sector mapping CSV
+    sector_mapping_file = 'ip_sector.csv' 
 
-    # Load sector mapping
     ip_to_sector_map = load_sector_mapping(sector_mapping_file)
 
-    # Filter printer_ips to only include those found in the sector map, or add a warning for missing ones
-    # You might want to adjust this logic based on whether you want to skip unknown IPs or just mark them
     filtered_printer_ips = [ip for ip in printer_ips if ip in ip_to_sector_map]
     if len(filtered_printer_ips) < len(printer_ips):
         print("Warning: Some printer IPs from the original list were not found in the sector mapping file and will be excluded or marked as 'N/A'.")
-        # If you want to include all printer_ips regardless, just use `printer_ips` directly in the tasks.
-        # The `get_printer_info` function already handles 'N/A' for missing sectors.
 
-    tasks = [get_printer_info(snmpEngine, ip, community_string, oids, ip_to_sector_map) for ip in printer_ips] # Using original printer_ips to ensure all are attempted
+    tasks = [get_printer_info(snmpEngine, ip, community_string, oids, ip_to_sector_map) for ip in printer_ips] 
 
     print(f"Carregando... (Salvando resultados em {output_filename})")
     results = await asyncio.gather(*tasks)
