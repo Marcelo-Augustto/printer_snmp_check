@@ -1,0 +1,28 @@
+IP Address,Sector,Printer Model,Total Page Count,Device Status,Serial Number
+10.1.1.12,Tesouraria,HP ETHERNET MULTI-ENVIRONMENT,27457,3,BRDSQ4C02Z
+10.1.1.17,RH,HP ETHERNET MULTI-ENVIRONMENT,117740,3,BRDSNCCBSC
+10.1.1.129,Protocolo,HP ETHERNET MULTI-ENVIRONMENT,102695,3,BRDSQ4B0DH
+10.1.1.139,Diego Fazenda,HP ETHERNET MULTI-ENVIRONMENT,21620,3,BRDSNC545Y
+10.1.1.142,Fiscalizacao,HP ETHERNET MULTI-ENVIRONMENT,110142,3,BRDSP3KNHL
+10.1.1.196,Juridico,HP ETHERNET MULTI-ENVIRONMENT,51991,3,BRDSP3KPJ4
+10.1.10.142,Contabilidade,HP ETHERNET MULTI-ENVIRONMENT,31531,3,BRDSQCG04Q
+10.1.17.124,Fran,HP ETHERNET MULTI-ENVIRONMENT,10961,3,BRCSPCY11B
+10.1.17.180,Fiscalizacao,HP ETHERNET MULTI-ENVIRONMENT,51492,3,BRDSP3KNMP
+10.1.18.190,Cadastro,HP ETHERNET MULTI-ENVIRONMENT,108609,3,BRDSNCCBTB
+10.1.19.110,Divida Ativa,HP ETHERNET MULTI-ENVIRONMENT,19993,3,BRBSS5H06J
+10.1.23.106,Cadastro Imobiliario,KYOCERA Document Solutions Printing System,71487,2,VR99660980
+172.16.0.133,Abrigo,Error: No SNMP response received before timeout,Error: No SNMP response received before timeout,Error: No SNMP response received before timeout,Error: No SNMP response received before timeout
+192.168.0.201,Controle Interno,Error: No SNMP response received before timeout,Error: No SNMP response received before timeout,Error: No SNMP response received before timeout,Error: No SNMP response received before timeout
+192.168.16.46,Escola Thereza,Error: No SNMP response received before timeout,Error: No SNMP response received before timeout,Error: No SNMP response received before timeout,Error: No SNMP response received before timeout
+192.168.25.29,Sec. Desenvolvimento,HP ETHERNET MULTI-ENVIRONMENT,53094,3,BRDSNC84JN
+192.168.25.177,SINE,HP ETHERNET MULTI-ENVIRONMENT,8964,3,BRBSS5M066
+192.168.31.11,Meio Ambiente,HP ETHERNET MULTI-ENVIRONMENT,23961,3,BRBSS37035
+192.168.31.12,PAD,HP ETHERNET MULTI-ENVIRONMENT,25441,3,BRDSNC84H6
+192.168.31.13,Patrimonio,HP ETHERNET MULTI-ENVIRONMENT,21090,3,BRDSNC5467
+192.168.31.170,Ana Altiva,Error: No SNMP response received before timeout,Error: No SNMP response received before timeout,Error: No SNMP response received before timeout,Error: No SNMP response received before timeout
+192.168.32.42,CRAS Coordenacao,Error: No SNMP response received before timeout,Error: No SNMP response received before timeout,Error: No SNMP response received before timeout,Error: No SNMP response received before timeout
+192.168.33.20,Sec. Saúde - Paulo,HP ETHERNET MULTI-ENVIRONMENT,117370,3,BRDSNC549G
+192.168.33.21,Vigilancia Sanitaria,RICOH SP 3710SF V1.06 / RICOH Network Printer C model / RICOH Network Scanner C model / RICOH Network Facsimile C model,66644,2,5179ZB10898 
+192.168.33.23,Farmacia 2,RICOH SP 3710SF V1.06 / RICOH Network Printer C model / RICOH Network Scanner C model / RICOH Network Facsimile C model,52778,2,5179ZB11206 
+192.168.33.25,Transporte Saude,RICOH SP 3710SF V1.06 / RICOH Network Printer C model / RICOH Network Scanner C model / RICOH Network Facsimile C model,65073,2,5179ZB10582 
+192.168.35.20,Posto 4,HP ETHERNET MULTI-ENVIRONMENT,86781,3,BRDSNC545H
