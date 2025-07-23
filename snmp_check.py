@@ -140,7 +140,6 @@ async def main():
             csv_writer.writerow(csv_header)
 
             for printer_ip, printer_data in results:
-                # Ensure the order matches csv_header
                 row_data = [printer_data.get(header, 'N/A') for header in csv_header]
                 csv_writer.writerow(row_data)
         print(f"Informacoes salvas em: {output_filename}")
