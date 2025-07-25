@@ -1,0 +1,28 @@
+1. Preparação e Execução do Código
+
+- >>Passo crucial<< 
+    -Para que o código funcione corretamente, abra a pasta do projeto (onde estão todos os arquivos do código, incluindo a pasta venv) diretamente no VS Code. 
+    - Você pode fazer isso usando Ctrl + K e depois Ctrl + O. Isso garante que o ambiente virtual (venv) seja ativado.
+
+- Para rodar o código, abra o arquivo snmp_check.py e clique no botão "Run" localizado no canto superior direito da janela do VS Code.
+
+Os dados coletados serão automaticamente salvos no arquivo printers_info.csv. Se o arquivo não existir, ele será criado. 
+Importante: O arquivo printers_info.csv é reescrito a cada execução, então o conteúdo anterior será substituído.
+
+2. Adicionando Novas Impressoras
+
+- Para incluir novas impressoras na verificação:
+
+    -Abra o arquivo snmp_check.py e adicione o endereço IP da nova impressora na lista de IPs.
+
+    -Abra o arquivo ip_sector.csv e adicione o endereço IP da nova impressora, seguido do setor ao qual ela pertence.
+
+3. Visualizando os Dados Coletados
+
+- Você pode visualizar os dados gerados no arquivo printers_info.csv usando o Excel:
+
+    - Abra um documento em branco no Excel.
+    - Vá até a aba "Dados".
+    - No grupo "Obter e Transformar Dados", selecione "De Texto/CSV".
+    - Navegue até a pasta do seu projeto e escolha o arquivo printers_info.csv (o caminho completo deve ser algo como C:\Users\User\Desktop\printer_snmp_check\printers_info.csv).
+    - Clique em "Carregar Dados".
